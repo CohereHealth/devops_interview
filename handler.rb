@@ -9,7 +9,7 @@ set :bind, '0.0.0.0'
 # Set up a database connection
 db = SQLite3::Database.new 'test.db'
 
-# Create a hypothetical users table for demonstration purposes
+# Creating a hypothetical users table for demonstration purposes
 db.execute <<-SQL
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY,
